@@ -1,0 +1,125 @@
+ int A = 13;
+ int B = 12;
+ int C = 11;
+ int D = 10;
+ int E = 9;
+ int F = 8;
+ int G = 7;
+ int H = 6;
+
+
+void setup(void)
+{
+  pinMode(A, OUTPUT);
+  pinMode(B, OUTPUT);
+  pinMode(C, OUTPUT);
+  pinMode(D, OUTPUT);
+  pinMode(E, OUTPUT);
+  pinMode(F, OUTPUT);
+  pinMode(G, OUTPUT);
+  pinMode(H, OUTPUT);
+}
+
+//My Functions
+
+void first(void) {
+  digitalWrite(A, HIGH);
+  digitalWrite(B, LOW);
+  digitalWrite(C, LOW);
+  digitalWrite(D, LOW);
+  digitalWrite(E, LOW);
+  digitalWrite(F, LOW);
+  digitalWrite(G, LOW);
+  digitalWrite(H, LOW);
+}
+
+void second(void) {
+  digitalWrite(A, LOW);
+  digitalWrite(B, HIGH);
+  digitalWrite(C, LOW);
+  digitalWrite(D, LOW);
+  digitalWrite(E, LOW);
+  digitalWrite(F, LOW);
+  digitalWrite(G, LOW);
+  digitalWrite(H, LOW);
+}
+
+void third(void) {
+  digitalWrite(A, LOW);
+  digitalWrite(B, LOW);
+  digitalWrite(C, HIGH);
+  digitalWrite(D, LOW);
+  digitalWrite(E, LOW);
+  digitalWrite(F, LOW);
+  digitalWrite(G, LOW);
+  digitalWrite(H, LOW);
+}
+
+void forth(void) {
+  digitalWrite(A, LOW);
+  digitalWrite(B, LOW);
+  digitalWrite(C, LOW);
+  digitalWrite(D, HIGH);
+  digitalWrite(E, LOW);
+  digitalWrite(F, LOW);
+  digitalWrite(G, LOW);
+  digitalWrite(H, LOW);
+}
+
+void fifth(void) {
+  digitalWrite(A, LOW);
+  digitalWrite(B, LOW);
+  digitalWrite(C, LOW);
+  digitalWrite(D, LOW);
+  digitalWrite(E, HIGH);
+  digitalWrite(F, LOW);
+  digitalWrite(G, LOW);
+  digitalWrite(H, LOW);
+}
+
+void sixth(void) {
+  digitalWrite(A, LOW);
+  digitalWrite(B, LOW);
+  digitalWrite(C, LOW);
+  digitalWrite(D, LOW);
+  digitalWrite(E, LOW);
+  digitalWrite(F, HIGH);
+  digitalWrite(G, LOW);
+  digitalWrite(H, LOW);
+}
+
+void seventh(void){
+  digitalWrite(A, LOW);
+  digitalWrite(B, LOW);
+  digitalWrite(C, LOW);
+  digitalWrite(D, LOW);
+  digitalWrite(E, LOW);
+  digitalWrite(F, LOW);
+  digitalWrite(G, HIGH);
+  digitalWrite(H, LOW);
+}
+// Start
+void loop(void)
+{
+  first();
+  delay(1000);
+  
+  second();
+  delay(1000);
+  
+  third();
+  delay(1000);
+  
+  forth();
+  delay(1000);
+  
+  fifth();
+  delay(1000);
+  
+  sixth();
+  delay(1000);
+  
+  seventh();
+  delay(1000);
+  
+}
