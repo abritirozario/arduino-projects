@@ -1,0 +1,13 @@
+int analog_ip = A0; //Set A0(Analog Input for the potentiometer
+int LED = 3;
+int inputVal = 0;
+
+void setup() {
+  pinMode (LED, OUTPUT);
+}
+
+void loop() {
+  inputVal = analogRead(analog_ip);
+  analogWrite (LED, inputVal/4);
+  delay(100);
+}
