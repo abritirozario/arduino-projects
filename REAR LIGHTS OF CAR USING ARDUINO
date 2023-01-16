@@ -1,0 +1,20 @@
+int ledPin = 13; // The LED is connected to pin 13
+int button = 7; // The button is connected to pin 7
+int val = 0;
+void setup () {
+   pinMode (ledPin, OUTPUT); // The LED pin is an output
+   pinMode (button, INPUT); // The pin of the button is an entry
+   }
+void loop() 
+{
+  val = digitalRead(button);
+  if(val == HIGH){
+    digitalWrite(ledPin, HIGH);
+  }else {
+     digitalWrite(ledPin, HIGH);
+     delay(10);
+     digitalWrite(ledPin, LOW);
+     delay(30);
+    
+  }
+ }
